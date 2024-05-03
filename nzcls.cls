@@ -43,6 +43,7 @@
 \RequirePackage{etoolbox} % class development toolset
 \RequirePackage{parskip} % paragraph spacing
 \RequirePackage[serbian]{babel} % serbian language babel
+\RequirePackage{soul} % better underlining
 
 
 % PGF Plot configuration
@@ -53,7 +54,7 @@
 % ----------------------
 
 % Standard math macros
-\newcommand{\ul}[1] % vectors
+\newcommand{\ulv}[1] % vectors
     {{}\mkern1mu\underline{\mkern-1mu#1\mkern-1mu}\mkern1mu}
 \DeclareSymbolFont{euler}{U}{eur}{m}{n} % symbol font
 \DeclareMathSymbol{\PI}{\mathord}{euler}{25} % up pi
@@ -157,7 +158,7 @@
     leftmargin=2\parindent,
     labelwidth=0pt,
     labelsep=0.5em,
-    itemindent=0pt}
+    itemindent=1cm}
 \setlist[description]{
     itemindent={0.5em-\parindent}}
 
